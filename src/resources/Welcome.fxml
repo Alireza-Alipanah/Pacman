@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.WelcomeView">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="343.0" prefWidth="600.0" StackPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutY="14.0" prefHeight="32.0" prefWidth="600.0" text="Welcome to pacman">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="75.0" layoutY="163.0" promptText="username" />
+            <Button layoutX="75.0" layoutY="242.0" mnemonicParsing="false" onAction="#tryToRegister" text="Register" />
+            <Button layoutX="158.0" layoutY="241.0" mnemonicParsing="false" onAction="#tryToLogin" prefHeight="26.0" prefWidth="59.0" text="Login" />
+            <Button layoutX="422.0" layoutY="200.0" mnemonicParsing="false" onAction="#playAsGuest" text="Play As Guest" />
+            <PasswordField fx:id="password" layoutX="75.0" layoutY="200.0" promptText="password" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

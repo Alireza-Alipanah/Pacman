@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainView">
+   <children>
+      <BorderPane fx:id="mainBorder" prefHeight="681.0" prefWidth="618.0">
+         <top>
+            <HBox prefHeight="40.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ToolBar fx:id="mainToolBar" prefHeight="40.0" prefWidth="618.0">
+                     <items>
+                        <MenuBar prefHeight="26.0" prefWidth="119.0">
+                           <menus>
+                              <Menu mnemonicParsing="false" text="Play">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#startNewGame" text="new game" />
+                                    <MenuItem mnemonicParsing="false" onAction="#resumeGame" text="Resume" />
+                                    <MenuItem mnemonicParsing="false" onAction="#makeANewMap" text="generate map" />
+                                    <MenuItem mnemonicParsing="false" onAction="#showControls" text="see controls" />
+                                 </items>
+                              </Menu>
+                              <Menu mnemonicParsing="false" text="Settings">
+                                 <items>
+                                    <CheckMenuItem fx:id="smoothAnimationCheckbox" mnemonicParsing="false" onAction="#changeAnimationSmoothness" text="smooth animation" />
+                                    <MenuItem mnemonicParsing="false" onAction="#changePassword" text="change password" />
+                                    <MenuItem mnemonicParsing="false" onAction="#deleteUser" text="delete user" />
+                                    <MenuItem mnemonicParsing="false" onAction="#logOut" text="logout" />
+                                 </items>
+                              </Menu>
+                           </menus>
+                        </MenuBar>
+                        <Button mnemonicParsing="false" onAction="#showScoreboard" text="Scoreboard" />
+                        <ToggleButton fx:id="muteToggleButton" mnemonicParsing="false" onAction="#mute" text="Mute" />
+                     </items>
+                  </ToolBar>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>

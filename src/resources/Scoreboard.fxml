@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+  <columns>
+    <TableColumn prefWidth="52.799986243247986" text="rank" />
+    <TableColumn prefWidth="218.39997100830078" text="username" />
+      <TableColumn prefWidth="106.4000244140625" text="score" />
+      <TableColumn prefWidth="240.39999389648438" text="date acquired" />
+  </columns>
+</TableView>
